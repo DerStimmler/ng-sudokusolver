@@ -1,0 +1,1 @@
+<input *ngFor="let cell of sudoku.cells" [(ngModel)]="cell.value" (ngModelChange)="logCellInput()" [classList]="cell.cssClasses">
