@@ -121,8 +121,15 @@
               "devServerTarget": "ng-sudokusolver:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://derstimmler.github.io/ng-sudokusolver/"
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "ng-sudokusolver"
 }
