@@ -9,6 +9,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import { MenuComponent } from './menu/menu.component';
 import {CommonModule} from '@angular/common';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSelectModule} from '@angular/material/select';
+import {MatSliderModule} from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import {CommonModule} from '@angular/common';
     FormsModule,
     BrowserAnimationsModule,
     MatCardModule,
-    CommonModule
+    MatButtonModule,
+    CommonModule,
+    MatSelectModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent],

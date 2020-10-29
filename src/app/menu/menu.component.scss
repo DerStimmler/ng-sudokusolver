@@ -2,3 +2,29 @@
   grid-column: 2;
   margin: 1rem;
 }
+
+.menu{
+  display: flex;
+  flex-direction: column;
+}
+
+.speed{
+  display: flex;
+  flex-direction: row;
+}
+
+.speed{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.speed > input{
+  width: 3rem;
+}
+
+.speed > mat-slider{
+  width: 100%;
+}
