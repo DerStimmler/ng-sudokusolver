@@ -1,2 +1,2 @@
 <app-grid [sudoku]="sudoku" (sudokuChange)="logSudokuChange()"></app-grid>
-<app-menu></app-menu>
+<app-menu (solveButtonClicked)="solveSudoku()" (settingsChange)="settings = $event"></app-menu>

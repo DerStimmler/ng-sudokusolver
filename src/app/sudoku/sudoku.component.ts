@@ -28,4 +28,9 @@ export class SudokuComponent implements OnInit, OnChanges {
   logSudokuChange() {
     console.log(this.sudoku.cells);
   }
+
+  solveSudoku():void {
+    this.sudoku.lockCells();
+
+  }
 }
