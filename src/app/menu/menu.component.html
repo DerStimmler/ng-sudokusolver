@@ -8,7 +8,6 @@
         <mat-label>Size</mat-label>
         <mat-select [value]="settings.size" (valueChange)="settings.size = $event">
           <mat-option [value]="9">9x9</mat-option>
-          <mat-option [value]="16">26x26</mat-option>
         </mat-select>
       </mat-form-field>
       <div class="speed">
@@ -26,5 +25,6 @@
   </mat-card-content>
   <mat-card-actions>
     <button mat-raised-button color="primary" (click)="handleSolveButtonClick()">Solve</button>
+    <button mat-raised-button color="primary" (click)="handleClearButtonClick()">Clear</button>
   </mat-card-actions>
 </mat-card>

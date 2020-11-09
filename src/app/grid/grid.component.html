@@ -1,7 +1,7 @@
 <mat-card>
   <div class="fields">
   <ng-template ngFor let-cell [ngForOf]="sudoku.cells" let-i="index">
-    <input type="number" [max]="sudoku.size" [min]="0" [(ngModel)]="cell.value" (ngModelChange)="logCellInput()" [classList]="cell.cssClasses">
+    <input type="number" [max]="sudoku.size" [min]="0" [(ngModel)]="cell.value" (ngModelChange)="logCellInput()" class="{{cell.cssClasses.join(',')}}">
     <br *ngIf="(i+1)%(sudoku.size) === 0 && i !== 0">
   </ng-template>
   </div>

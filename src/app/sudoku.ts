@@ -17,4 +17,8 @@ export class Sudoku {
       x.cssClasses.push('locked');
     });
   }
+
+    insertValue(index: number, value: number):void{
+      this.cells.filter(x => x.index === index)[0].value = value;
+    }
 }
